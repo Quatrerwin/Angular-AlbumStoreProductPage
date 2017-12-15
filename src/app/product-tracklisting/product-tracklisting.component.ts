@@ -10,12 +10,12 @@ import { resetFakeAsyncZone } from '@angular/core/testing';
 })
 export class ProductTracklistingComponent implements OnInit {
 
-  alnumInfo: Album;
+  albumInfo: Album;
 
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
-    this._productService.getAlbum(1).subscribe(response => this.alnumInfo = response);
+    this._productService.getAlbum(1).subscribe(response => this.albumInfo = response);
   }
 
 }
